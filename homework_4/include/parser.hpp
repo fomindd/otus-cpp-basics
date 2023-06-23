@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PARSER_HPP
+#define PARSER_HPP
 
 #include <istream>
 
@@ -30,3 +31,5 @@ class Parser {
     Lexer &lexer_;
     Lexer::Token tok_;
 };
+
+#endif

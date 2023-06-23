@@ -1,11 +1,9 @@
 // OTUS C++ Basic course homework skeleton.
 // Lexer using example
-
 #include <iostream>
-
-#include "astnode.hpp"
-#include "lexer.hpp"
-#include "parser.hpp"
+#include <astnode.hpp>
+#include <lexer.hpp>
+#include <parser.hpp>
 
 int main() {
     // TODO

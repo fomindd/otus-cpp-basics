@@ -1,7 +1,5 @@
-// OTUS C++ basic course homework.
-// ASTNode
-
-#pragma once
+#ifndef ASTNODE_HPP
+#define ASTNODE_HPP
 
 #include <cctype>
 #include <iostream>
@@ -80,3 +78,5 @@ class Variable : public ASTNode {
   private:
     std::string val_;
 };
+
+#endif
