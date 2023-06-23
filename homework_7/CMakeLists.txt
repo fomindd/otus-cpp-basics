@@ -1,7 +1,31 @@
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required(VERSION 3.2)
 
-project ("TEST")
+project(containers_tests)
 
-find_package(GTest)
+add_subdirectory(
+    "${CMAKE_CURRENT_SOURCE_DIR}/googletest" 
+    "googletest"
+)
 
-add_subdirectory ("TEST")
+# Test target
+add_executable(
+    containers_tests
+    test/vector_tests.cpp
+    test/list_tests.cpp
+    test/run_tests.cpp
+)
+
+target_include_directories(
+    containers_tests PRIVATE
+    "${CMAKE_CURRENT_SOURCE_DIR}/src"
+)
+
+target_link_libraries(
+    containers_tests PRIVATE
+    gtest gtest_main
+)
+
+target_compile_options(
+    containers_tests PRIVATE
+    -Wall -Wextra -pedantic -Werror
+)
