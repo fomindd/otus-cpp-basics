@@ -3,9 +3,9 @@
 #include <string>
 #include <cstdlib>
 #include <ctime>
-#include <check_value.h>
-#include <random_value.h>
-#include <high_scores.h>
+#include "check_value.h"
+#include "random_value.h"
+#include "high_scores.h"
 
 const int max_value = 100;
 std::string set_name();
