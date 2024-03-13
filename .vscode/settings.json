@@ -33,5 +33,6 @@
         "regex": "cpp",
         "utility": "cpp",
         "valarray": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/user/Рабочий стол/otus-cpp-basics/homework_3"
 }

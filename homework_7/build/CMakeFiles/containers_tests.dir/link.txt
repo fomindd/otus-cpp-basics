@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/containers_tests.dir/test/vector_tests.cpp.o CMakeFiles/containers_tests.dir/test/list_tests.cpp.o CMakeFiles/containers_tests.dir/test/run_tests.cpp.o -o containers_tests  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a -lpthread 
